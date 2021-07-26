@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Spartan', sans-serif;
+  background: url(images/bg-pattern-top-desktop.svg) left top no-repeat, url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.title-col {
+  padding-right: 50px;
+
+}
+
+.info {
+  color: hsl(303, 10%, 53%);
+  max-width: 700px;
+  margin-left: 20%;
+
+}
+
+.title {
+  color: hsl(300, 43%, 22%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 400px;
+  margin: 15% 0 10px 20%;
+}
+
+.reviews {
+  margin: 15% 10% 0 10%;
+  display: grid;
+  grid-template: auto auto auto;
+}
+
+.col {
+  background: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  max-width: 500px;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.first {
+  margin-left: -20%;
+}
+
+.second {
+  margin-left: -10%;
+}
+
+.star {
+  padding-left: 0.7em;
+}
+
+.rating {
+  display: inline;
+  color: hsl(300, 43%, 22%);
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 3em;
+}
+
+.testimonial {
+  margin-top: 20px;
+  display: flex;
+  padding: 5px 10px;
+  padding-left: 9%;
+}
+
+.row {
+  color: hsl(0, 0%, 100%);
+  background: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 22px;
+  height: auto;
+  max-height: 270px;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 100px;
+  max-width: 100%;
+}
+
+.profile {
+  display: flex;
+  flex-basis: 20px;
+}
+
+
+
+.pfp {
+  width: 70px;
+  padding: 10px;
+
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.buyer {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(333, 80%, 67%);
+}
+
+.review {
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.iren {
+  margin-top: 4%;
+}
+
+.ann {
+  margin-top: 6%;
+  margin-right: 80px;
+
+}
+
+@media (max-width: 400px) {
+
+  body{
+    text-align: center;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonial{
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .title-col{
+    padding-right: 0;
+  }
+
+  .title{
+    font-size: 2.3rem;
+    margin: 8% 0;
+    margin-bottom: 0;
+
+  }
+
+  .info {
+    margin: 0;
+    padding: 20px 10px;
+    }
+
+  .reviews {
+    margin: 0;
+
+  }
+  .first, .second {
+    margin-left: 10px;
+  }
+
+  .rating{
+    display: block;
+    padding: 5px 40px;
+  }
+
+
+  .testimonial{
+    margin: 0;
+    padding: 0;
+  }
+
+  .row {
+    max-height: none;
+    margin: 30px 22px;
+  }
+
+  .ann{
+    margin-top: 0;
+
+
+  }
+
+}
